@@ -10,7 +10,7 @@
 #include <QPrintDialog>
 #include <QColorDialog>
 #include <QColor>
-
+#include <QDesktopServices>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -59,6 +59,10 @@ private slots:
     void on_actioncenterAligment_triggered();
 
     void on_actionrightAligment_triggered();
+
+    void on_action_14_triggered();
+
+    void on_action_13_triggered();
 
 private:
     Ui::MainWindow *ui;

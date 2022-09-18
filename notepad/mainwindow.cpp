@@ -228,3 +228,17 @@ void MainWindow::on_actionrightAligment_triggered()
     ui->textEdit->setTextCursor(cursor);
 }
 
+
+void MainWindow::on_action_14_triggered()
+{
+    QString link = "http://www.mikeost.com";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+
+void MainWindow::on_action_13_triggered()
+{
+    QString link = "https://github.com/Mikeost/QtNotepad";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
