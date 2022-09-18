@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Блокнот</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2">
+     <widget class="QSpinBox" name="spinBox">
+      <property name="minimum">
+       <number>9</number>
+      </property>
+      <property name="maximum">
+       <number>288</number>
+      </property>
+      <property name="value">
+       <number>16</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFontComboBox" name="fontComboBox">
+      <property name="writingSystem">
+       <enum>QFontDatabase::Any</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>Звичайний</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Похилий</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Жирний</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Підкреслений</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Закреслений</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="6">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>100</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>554</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Редагування</string>
+    </property>
+    <addaction name="action_6"/>
+    <addaction name="action_7"/>
+    <addaction name="action_8"/>
+    <addaction name="separator"/>
+    <addaction name="action_9"/>
+    <addaction name="action_10"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Друк</string>
+    </property>
+    <addaction name="action_15"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Довідка</string>
+    </property>
+    <addaction name="action_13"/>
+    <addaction name="action_14"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_2"/>
+   <addaction name="action_3"/>
+   <addaction name="action_4"/>
+   <addaction name="action_15"/>
+   <addaction name="separator"/>
+   <addaction name="actionleftAligment"/>
+   <addaction name="actioncenterAligment"/>
+   <addaction name="actionrightAligment"/>
+  </widget>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="media/media.qrc">
+     <normaloff>:/new/prefix1/openFile.png</normaloff>:/new/prefix1/openFile.png</iconset>
+   </property>
+   <property name="text">
+    <string>Відкрити...</string>
+   </property>
+   <property name="toolTip">
+    <string>Відкрити файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="media/media.qrc">
+     <normaloff>:/new/prefix1/saveFile.png</normaloff>:/new/prefix1/saveFile.png</iconset>
+   </property>
+   <property name="text">
+    <string>Зберегти...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Вийти</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>Скопіювати</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Вставити</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Вирізати</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>Скасувати</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>Повторити</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>Про программу</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>Про автора</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="icon">
+    <iconset resource="media/media.qrc">
+     <normaloff>:/new/prefix1/printer.png</normaloff>:/new/prefix1/printer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Роздрукувати файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="media/media.qrc">
+     <normaloff>:/new/prefix1/newFile.png</normaloff>:/new/prefix1/newFile.png</iconset>
+   </property>
+   <property name="text">
+    <string>Новий файл</string>
+   </property>
+   <property name="toolTip">
+    <string>Новий файл</string>
+   </property>
+  </action>
+  <action name="actionleftAligment">
+   <property name="icon">
+    <iconset resource="media/media.qrc">
+     <normaloff>:/new/prefix1/left-align.png</normaloff>:/new/prefix1/left-align.png</iconset>
+   </property>
+   <property name="text">
+    <string>leftAligment</string>
+   </property>
+   <property name="toolTip">
+    <string>Вирівнювання по лівому краю</string>
+   </property>
+  </action>
+  <action name="actioncenterAligment">
+   <property name="icon">
+    <iconset resource="media/media.qrc">
+     <normaloff>:/new/prefix1/center-align.png</normaloff>:/new/prefix1/center-align.png</iconset>
+   </property>
+   <property name="text">
+    <string>centerAligment</string>
+   </property>
+   <property name="toolTip">
+    <string>Вирівнювання по центру</string>
+   </property>
+  </action>
+  <action name="actionrightAligment">
+   <property name="icon">
+    <iconset resource="media/media.qrc">
+     <normaloff>:/new/prefix1/right-align.png</normaloff>:/new/prefix1/right-align.png</iconset>
+   </property>
+   <property name="text">
+    <string>rightAligment</string>
+   </property>
+   <property name="toolTip">
+    <string>Вирівнювання по правому краю</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="media/media.qrc"/>
+ </resources>
+ <connections/>
+</ui>

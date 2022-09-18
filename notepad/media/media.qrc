@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>newFile.png</file>
+        <file>save.png</file>
+        <file>saveFile.png</file>
+        <file>openFile.png</file>
+        <file>printer.png</file>
+        <file>center-align.png</file>
+        <file>left-align.png</file>
+        <file>right-align.png</file>
+    </qresource>
+</RCC>
