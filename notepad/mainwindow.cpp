@@ -6,7 +6,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //this->setCentralWidget(ui->textEdit);
     ui->statusbar->showMessage(QString("Позиція курсору: Строка 1, Символ 1"));
     connect(ui->textEdit, SIGNAL(cursorPositionChanged()), this, SLOT(showCursorPos()));
 }
@@ -188,14 +187,6 @@ void MainWindow::on_pushButton_clicked()
         QString qss = QString("background-color: %1").arg(color.name());
         ui->pushButton->setStyleSheet(qss);
     }
-
-    /*
-    QPalette pal = ui->pushButton->palette();
-    pal.setColor(QPalette::Button, QColor(color));
-    ui->pushButton->setBackground(true);
-    ui->pushButton->setPalette(pal);
-    ui->pushButton->update();
-    */
 }
 
 

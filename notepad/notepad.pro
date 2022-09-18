@@ -25,3 +25,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     media/media.qrc
+
+ICON = $$PWD/media/notepad.icns

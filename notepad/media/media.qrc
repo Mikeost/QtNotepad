@@ -8,5 +8,7 @@
         <file>center-align.png</file>
         <file>left-align.png</file>
         <file>right-align.png</file>
+        <file>notepad.ico</file>
+        <file>notepad.icns</file>
     </qresource>
 </RCC>
